@@ -1,8 +1,7 @@
 version: '3.7'
 services:
   proxy:
-    build:
-      context: mixpanel_nginx/
+    build: .
       dockerfile: Dockerfile
     ports:
     - "8000:80"
